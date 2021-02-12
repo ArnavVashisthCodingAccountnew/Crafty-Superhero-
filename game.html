@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crafty SUPERHERO</title>
+<link rel="stylesheet" href="style.css">
+<script src="fabric.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+<script src="html2canvas-master/dist/html2canvas.js"></script>
+<script src="jquery.min.js"></script>
+<script src="FileSaver.min.js"></script>
+<script src="canvas-toBlob.js"></script>
+<style>
+    .body_backgorund 
+{
+    background-image: url("avenger_bg.jpg");
+    background-position: center;
+	background-size: cover;
+	
+}
+#myCanvas
+{
+    border-width:10px;
+    background-color: white; 
+    border-style:ridge;
+
+}
+
+h2
+{
+	background: #337ab7;
+	color: white;
+	border-radius: 10px;
+	width: 200px;
+	padding: 5px;
+ }
+h3
+{
+	display: inline-block;
+}
+span
+{
+	font-size: 22px;
+	color: white;
+}
+a
+{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+#download
+{
+	background: #5bc0de;
+	float: left;
+	margin-top: 25px;
+	padding: 10px;
+	border-radius: 10px;
+}
+#head_info
+{
+	background: #d9534f;
+	width: 600px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+body{
+	color:white;
+	font-size: medium;
+}
+img{
+	width:70%;
+	height: 70%;
+}
+#duper{
+	width:40px;
+	height:40px;
+}
+#m{
+	display: inline-block;
+}
+#URL_img_LIVE{
+	color:black;
+}
+input{
+	color:black;
+}
+div{
+	background-color:orangered
+}
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 42px;
+    font-size: 16px;
+  }
+</style>
+</head>
+
+<body class="body_backgorund">
+	<script src= 
+	"https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"> 
+	  </script>
+	<center>
+		<h2 class="btn-primary">Crafty SUPERHERO</h2>
+
+		<div id="head_info" class="btn-danger">
+			<h3>Current Width  = <span id="current_width">70</span></h3>
+			<h3>Current Height  = <span id="current_height">70</span></h3>
+		</div>
+
+
+		<canvas width="800" height="600" id="myCanvas"></canvas>
+		<br>
+
+
+
+<img src="CONTROLS.png">
+<br> <br> 
+<div>
+
+<h3>Custom Images</h3>  <span class="badge badge-success">NEW</span>
+
+
+</center>
+
+	
+	<center>
+	
+	<span><input type="text" placeholder="Add URL" id="URL_img_LIVE">
+		<br><br>
+
+	
+<img id="duper" onclick="YOURSUPERDUPERHERO()" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAACVBMVEX///8AAAB/f39J4Y+kAAABvElEQVR4nO3bMXLDMAwAQQf/f3T6WNIQoMgcOLd1ClwRW6bAz0eSJEmSJEmSJEnSGX4u/PdMJYbQGEJjCI0hNIbQGEJjCI0hNIbQGEJjCI0hNIbQGEJjCI0hNIbQGEJjCI0hNIbQGEJjCI0hNPSQGP1DeEgMD8MOifFh0CGRGIYcEplhwCGRGoYbErlhsCGRHIYaEtlhoCGRHoYZEvlhkCFRGIYYEpVhgCFRGoYXErVhcCFRHIYW8reja8hXR9OQ746eIRcdLUOuOjqGXHY0DLnu6Bdy09Eu5K6jW8htR7OQ+45eIQ8drUKeOjqFPHY0CnnumHJKx9aQlR07Q5Z2bAxZ27EvZHHHtpDVHbtClndsClnfsSdkQ4chuJI9Icf8s5/z8XvOF+I5jyjnPDSe8xh/zg+rc37qvnX4QPDKcRDCGwd0DC8cmULMH2JTTL9WwJh90cMx+eoNZO5lKMnU62mUmYUBlokVDpj6Ug1Nec0Jp7p4xlNcBQSqLWcSldZlkSoLzEyFlXKo/JI/VfraBVb2IgxX8moSWO6yGFnq+h5a5kIlW+KKK9z4pWO64WvgkiRJkiRJkiRJkkB+AUT3EakakSD8AAAAAElFTkSuQmCC"></center>
+</span>
+
+<br> <br>
+<center>
+	
+	   
+	</script>
+	</center> 
+	<div>
+		<center>
+	<h3>Text</h3>  <span class="badge badge-success">NEW</span></div></center>
+
+</center>
+
+	
+	<center>
+		<span>Text  - </span> 
+		<input type="text" id="text" value="Text">
+					 
+	   <span>X axis - </span> 
+		<input type="text" id="x-axis" value="10">
+			  
+			   <span>Y axis - </span> 
+		<input type="text" id="y-axis" value="10">
+			  <br/> <br/>
+		 
+			
+			  <button onclick="applytext()">Apply Text</button> 
+			  <BUTTON id="b">Save As Image</BUTTON>
+			  <h3><b>Note:</b>If you have added custom files, then you cannot download image by clicking "Download Image". Instead you will have to Go and open snipping tool and snip the part you need and then save it.</h3>
+
+			  @Tchind. Made In India 
+
+
+			  <br> <br>
+
+			  @Endorses Koo App - at https://kooapp.com . 
+	<script src="main.js"></script>
+	</body>
+</html>
